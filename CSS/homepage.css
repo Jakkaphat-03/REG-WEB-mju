@@ -197,6 +197,14 @@ body{
 .slider input{
     display: none;
 }
+.slider .item img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* ปรับตามความสูงที่ต้องการให้ภาพไม่เกิน */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 8px;
+}
 .testimonials {
   display: flex;
   align-items: center;
@@ -211,7 +219,7 @@ body{
   width: 300px;
   padding: 30px;
   border-radius: 5px;
-  background: #21262d;
+  background: #37383996;
   position: absolute;
   border: 3px solid white;
   top: 0;
@@ -221,6 +229,7 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   user-select: none;
   cursor: pointer;
+  
 }
 
 .testimonials .item h1 {
