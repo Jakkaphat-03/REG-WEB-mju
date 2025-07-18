@@ -31,8 +31,8 @@
   </script>
 
   <script src="JS/script.js"></script>
-
-  <!-- รูปภาพแบนเนอร์ -->
+<div class="banner-slider-container">
+  <!-- รูปภาพแบนเนอร์1 -->
   <div class="image-wrapper">
     <img src="img/mju-slogan-one.png" alt="Description" />
   </div>
@@ -40,8 +40,8 @@
   <!-- ข่าวหนึ่ง -->
   <div class="slider">
     <input type="radio" name="testimonial" id="t-1" />
-    <input type="radio" name="testimonial" id="t-2" checked />
-    <input type="radio" name="testimonial" id="t-3" />
+    <input type="radio" name="testimonial" id="t-2"  />
+    <input type="radio" name="testimonial" id="t-3" checked/>
     <input type="radio" name="testimonial" id="t-4" />
     <input type="radio" name="testimonial" id="t-5" />
 
@@ -61,10 +61,38 @@
       <label for="t-5"></label>
     </div>
   </div>
-
-  <!-- รูปภาพแบนเนอร์อีกอัน -->
-  <div class="image-wrapper">
-    <img src="img/mju-slogan-two.png" alt="Description" />
+</div>
+  <!-- Slider2 + แบนเนอร์2 -->
+<div class="banner-slider-container">
+    <!-- Slider2 -->
+    <div class="slider">
+      <input type="radio" name="testimonial2" id="s-1" />
+      <input type="radio" name="testimonial2" id="s-2" />
+      <input type="radio" name="testimonial2" id="s-3" checked />
+      <input type="radio" name="testimonial2" id="s-4" />
+      <input type="radio" name="testimonial2" id="s-5" />
+  
+      <div class="testimonials">
+        <label class="item" for="s-1"><h1>1</h1></label>
+        <label class="item" for="s-2"><h1>2</h1></label>
+        <label class="item" for="s-3"><h1>3</h1></label>
+        <label class="item" for="s-4"><h1>4</h1></label>
+        <label class="item" for="s-5"><h1>5</h1></label>
+      </div>
+  
+      <div class="dots">
+        <label for="s-1"></label>
+        <label for="s-2"></label>
+        <label for="s-3"></label>
+        <label for="s-4"></label>
+        <label for="s-5"></label>
+      </div>
+    </div>
+  
+    <!-- แบนเนอร์2 -->
+    <div class="image-wrapper">
+      <img src="img/mju-slogan-two.png" alt="Slogan Two" />
+    </div>
   </div>
 
   <!-- Footer -->

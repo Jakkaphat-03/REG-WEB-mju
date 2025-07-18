@@ -6,24 +6,24 @@
 /* Prompt */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 0 30px;
-    position: relative;
-    height:100px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 0 30px;
+      position: relative;
+      height:100px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      
 
-    /* ให้ลอยอยู่หน้าสุด */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;       
-}
+      /* ให้ลอยอยู่หน้าสุด */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;       
+  }
 
 .logo{
     display: flex;
@@ -181,15 +181,14 @@
 }
 
 
-
 body{
     margin: 0;
     background: #ffffff;
     color: white;
     font-family: sans-serif;
-    display: flex;
     align-items: center;
     min-height: 100vh;
+    /*display: flex;*/
 }
 
 .slider{
@@ -249,7 +248,12 @@ body{
 #t-2:checked ~ .dots label[for="t-2"],
 #t-3:checked ~ .dots label[for="t-3"],
 #t-4:checked ~ .dots label[for="t-4"],
-#t-5:checked ~ .dots label[for="t-5"] {
+#t-5:checked ~ .dots label[for="t-5"],
+#s-1:checked ~ .dots label[for="s-1"],
+#s-2:checked ~ .dots label[for="s-2"],
+#s-3:checked ~ .dots label[for="s-3"],
+#s-4:checked ~ .dots label[for="s-4"],
+#s-5:checked ~ .dots label[for="s-5"] {
   background-color: #1ce573;
   transform: scale(2);
   box-shadow: 0px 0px 0px 3px #dddddd24;
@@ -262,7 +266,15 @@ body{
 #t-3:checked ~ .dots label[for="t-4"],
 #t-4:checked ~ .dots label[for="t-3"],
 #t-4:checked ~ .dots label[for="t-5"],
-#t-5:checked ~ .dots label[for="t-4"] {
+#t-5:checked ~ .dots label[for="t-4"],
+#s-1:checked ~ .dots label[for="s-2"],
+#s-2:checked ~ .dots label[for="s-1"],
+#s-2:checked ~ .dots label[for="s-3"],
+#s-3:checked ~ .dots label[for="s-2"],
+#s-3:checked ~ .dots label[for="s-4"],
+#s-4:checked ~ .dots label[for="s-3"],
+#s-4:checked ~ .dots label[for="s-5"],
+#s-5:checked ~ .dots label[for="s-4"]  {
   transform: scale(1.5);
 }
 
@@ -271,25 +283,40 @@ body{
 #t-4:checked ~ .testimonials label[for="t-2"],
 #t-5:checked ~ .testimonials label[for="t-3"],
 #t-2:checked ~ .testimonials label[for="t-5"],
-#t-1:checked ~ .testimonials label[for="t-4"] {
+#t-1:checked ~ .testimonials label[for="t-4"],
+#s-3:checked ~ .testimonials label[for="s-1"],
+#s-4:checked ~ .testimonials label[for="s-2"],
+#s-5:checked ~ .testimonials label[for="s-3"],
+#s-2:checked ~ .testimonials label[for="s-5"],
+#s-1:checked ~ .testimonials label[for="s-4"] {
   transform: translate3d(-600px, 0, -180px) rotateY(25deg);
-  z-index: 3;
+  z-index: 2;
 }
 /*2*/
 #t-2:checked ~ .testimonials label[for="t-1"],
 #t-3:checked ~ .testimonials label[for="t-2"],
 #t-4:checked ~ .testimonials label[for="t-3"],
 #t-5:checked ~ .testimonials label[for="t-4"],
-#t-1:checked ~ .testimonials label[for="t-5"] {
+#t-1:checked ~ .testimonials label[for="t-5"],
+#s-2:checked ~ .testimonials label[for="s-1"],
+#s-3:checked ~ .testimonials label[for="s-2"],
+#s-4:checked ~ .testimonials label[for="s-3"],
+#s-5:checked ~ .testimonials label[for="s-4"],
+#s-1:checked ~ .testimonials label[for="s-5"] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
-  z-index: 2;
+  z-index: 3;
 }
 /*3*/
 #t-3:checked ~ .testimonials label[for="t-1"],
 #t-4:checked ~ .testimonials label[for="t-2"],
 #t-5:checked ~ .testimonials label[for="t-3"],
 #t-2:checked ~ .testimonials label[for="t-5"],
-#t-1:checked ~ .testimonials label[for="t-4"] {
+#t-1:checked ~ .testimonials label[for="t-4"],
+#s-3:checked ~ .testimonials label[for="s-1"],
+#s-4:checked ~ .testimonials label[for="s-2"],
+#s-5:checked ~ .testimonials label[for="s-3"],
+#s-2:checked ~ .testimonials label[for="s-5"],
+#s-1:checked ~ .testimonials label[for="s-4"] {
   z-index: 4;
 }
 /*4*/
@@ -297,7 +324,12 @@ body{
 #t-2:checked ~ .testimonials label[for="t-3"],
 #t-3:checked ~ .testimonials label[for="t-4"],
 #t-4:checked ~ .testimonials label[for="t-5"],
-#t-5:checked ~ .testimonials label[for="t-1"] {
+#t-5:checked ~ .testimonials label[for="t-1"],
+#s-1:checked ~ .testimonials label[for="s-2"],
+#s-2:checked ~ .testimonials label[for="s-3"],
+#s-3:checked ~ .testimonials label[for="s-4"],
+#s-4:checked ~ .testimonials label[for="s-5"],
+#s-5:checked ~ .testimonials label[for="s-1"] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
 }
@@ -306,7 +338,32 @@ body{
 #t-2:checked ~ .testimonials label[for="t-4"],
 #t-3:checked ~ .testimonials label[for="t-5"],
 #t-4:checked ~ .testimonials label[for="t-1"],
-#t-5:checked ~ .testimonials label[for="t-2"] {
+#t-5:checked ~ .testimonials label[for="t-2"],
+#s-1:checked ~ .testimonials label[for="s-3"],
+#s-2:checked ~ .testimonials label[for="s-4"],
+#s-3:checked ~ .testimonials label[for="s-5"],
+#s-4:checked ~ .testimonials label[for="s-1"],
+#s-5:checked ~ .testimonials label[for="s-2"] {
   transform: translate3d(600px, 0, -180px) rotateY(-25deg);
   z-index: 2;
+}
+
+.banner-slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap; /* ทำให้ responsive */
+}
+
+.banner-slider-container .image-wrapper img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.banner-slider-container .slider {
+  flex: 1;
+  min-width: 320px;
 }
