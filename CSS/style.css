@@ -1,0 +1,132 @@
+/* Sarabun */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Archivo Black */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 30px;
+    position: relative;
+    height:100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    
+
+    /* ให้ลอยอยู่หน้าสุด */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;       
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    display: block;
+}
+.text-section {
+    text-align:start;
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Sarabun', sans-serif;
+}
+.text-section h4,.text-section h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+.divider {
+    line-height:0.9;
+    color: rgb(88, 87, 87);
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* หรือใช้ space-evenly ก็ได้ */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100rem; /* ปรับความกว้างของเมนูได้ตามต้องการ */
+  font-family: 'Sarabun', sans-serif;
+}
+
+.menu-items .login-button a {
+  background-color: #076607; /* สีเขียว */
+  color: rgb(255, 255, 255);
+  border-radius: 5px;   
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-items .login-button a:hover {
+    background-color: #ddbe0b; /* สีเขียวเข้มเมื่อ hover */
+}
+
+.menu-items li {
+    margin-left: 250px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu-items li a {
+    text-decoration: none;
+}
+
+.menu-items a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    /* padding: 100px; */
+}
+
+/* ไอคอนเมนู (3 ขีด) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* แสดงเมนูแฮมเบอร์เกอร์ในหน้าจอเล็ก */
+@media (max-width: 8.3in) {
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #2c3e50;
+        width: 200px;
+        border-left: 1px solid #444;
+    }
+
+    .menu-items.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.th-en {
+    position: absolute;
+    right: 10px;
+    bottom: 60px;
+    color: #000;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
+}
+
+.th-en a {
+    text-decoration: none;
+    color: #000
+}
