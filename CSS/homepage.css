@@ -32,16 +32,7 @@
 .logo img {
     display: block;
 }
-.text-section {
-    text-align:start;
-    margin: 0 10px;
-    color: rgb(0, 0, 0);
-    font-family: 'Sarabun', sans-serif;
-}
-.text-section h4,.text-section h3 {
-    margin: 0;
-    line-height: 1.2;
-}
+
 .divider {
     line-height:0.9;
     color: rgb(88, 87, 87);
@@ -75,6 +66,7 @@
     margin-left: 250px;
     text-decoration: none;
     font-weight: 700;
+
 }
 
 .menu-items li a {
@@ -85,7 +77,6 @@
     color: rgb(0, 0, 0);
     font-size: 20px;
     text-decoration: none;
-    /* padding: 100px; */
 }
 
 /* ไอคอนเมนู (3 ขีด) */
@@ -162,14 +153,6 @@
 
 }
 
-/* .line-img p{
-    margin-top: 400px;
-    margin-left: 165px;
-    color: #837e7e;
-    font-family: 'Nunito', sans-serif;
-    font-size: 150px;
-    font-weight: 200;
-} */
 
 .slogan-img {
     display: flex;
@@ -178,4 +161,145 @@
     margin-left: -120px;
     width: 500px;
     height: auto;
+}
+
+
+
+body{
+    margin: 0;
+    background: #ffffff;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.slider{
+    width: 100%;
+}
+.slider input{
+    display: none;
+}
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 350px;
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.testimonials .item {
+  width: 300px;
+  padding: 30px;
+  border-radius: 5px;
+  background: #21262d;
+  position: absolute;
+  border: 3px solid white;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
+}
+
+.testimonials .item h1 {
+  font-size: 114px;
+  color: white;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots label {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #413b52;
+  margin: 7px;
+  transition-duration: 0.2s;
+}
+
+#t-1:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-4"],
+#t-5:checked ~ .dots label[for="t-5"] {
+  background-color: #1ce573;
+  transform: scale(2);
+  box-shadow: 0px 0px 0px 3px #dddddd24;
+}
+
+#t-1:checked ~ .dots label[for="t-2"],
+#t-2:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-3"],
+#t-3:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-4"],
+#t-4:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-5"],
+#t-5:checked ~ .dots label[for="t-4"] {
+  transform: scale(1.5);
+}
+
+/*1*/
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-5"],
+#t-1:checked ~ .testimonials label[for="t-4"] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  z-index: 3;
+}
+/*2*/
+#t-2:checked ~ .testimonials label[for="t-1"],
+#t-3:checked ~ .testimonials label[for="t-2"],
+#t-4:checked ~ .testimonials label[for="t-3"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-1:checked ~ .testimonials label[for="t-5"] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 2;
+}
+/*3*/
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-5"],
+#t-1:checked ~ .testimonials label[for="t-4"] {
+  z-index: 4;
+}
+/*4*/
+#t-1:checked ~ .testimonials label[for="t-2"],
+#t-2:checked ~ .testimonials label[for="t-3"],
+#t-3:checked ~ .testimonials label[for="t-4"],
+#t-4:checked ~ .testimonials label[for="t-5"],
+#t-5:checked ~ .testimonials label[for="t-1"] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+/*5*/
+#t-1:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-4"],
+#t-3:checked ~ .testimonials label[for="t-5"],
+#t-4:checked ~ .testimonials label[for="t-1"],
+#t-5:checked ~ .testimonials label[for="t-2"] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+
+.slogan-two {
+  position: relative;
+  align-items: flex-end;
+  bottom: 0;
+  right: 0;
+  width: 500px;      /* ปรับขนาดตามต้องการ */
+  height: auto;
+  z-index: 0;       /* ให้อยู่หน้าสุด เหนือ footer */
 }
