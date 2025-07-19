@@ -32,16 +32,7 @@
 .logo img {
     display: block;
 }
-.text-section {
-    text-align:start;
-    margin: 0 10px;
-    color: rgb(0, 0, 0);
-    font-family: 'Sarabun', sans-serif;
-}
-.text-section h4,.text-section h3 {
-    margin: 0;
-    line-height: 1.2;
-}
+
 .divider {
     line-height:0.9;
     color: rgb(88, 87, 87);
@@ -75,6 +66,7 @@
     margin-left: 250px;
     text-decoration: none;
     font-weight: 700;
+
 }
 
 .menu-items li a {
@@ -85,7 +77,6 @@
     color: rgb(0, 0, 0);
     font-size: 20px;
     text-decoration: none;
-    /* padding: 100px; */
 }
 
 /* ไอคอนเมนู (3 ขีด) */
@@ -162,14 +153,6 @@
 
 }
 
-/* .line-img p{
-    margin-top: 400px;
-    margin-left: 165px;
-    color: #837e7e;
-    font-family: 'Nunito', sans-serif;
-    font-size: 150px;
-    font-weight: 200;
-} */
 
 .slogan-img {
     display: flex;
@@ -309,4 +292,14 @@ body{
 #t-5:checked ~ .testimonials label[for="t-2"] {
   transform: translate3d(600px, 0, -180px) rotateY(-25deg);
   z-index: 2;
+}
+
+.slogan-two {
+  position: relative;
+  align-items: flex-end;
+  bottom: 0;
+  right: 0;
+  width: 500px;      /* ปรับขนาดตามต้องการ */
+  height: auto;
+  z-index: 0;       /* ให้อยู่หน้าสุด เหนือ footer */
 }
