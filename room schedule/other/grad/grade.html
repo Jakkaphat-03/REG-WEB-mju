@@ -22,7 +22,7 @@
     <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl">
         <nav class="navbar">
             <div class="logo">
-                <img src="img/mju_logo.png" alt="">
+                <img src="../../../img/mju_logo.png" alt="">
             </div>
 
             <div class="menu-toggle" id="menu-toggle">
@@ -46,52 +46,111 @@
         <div class="box-menu">
             <div class="box-list">
                 <ul class="system-menu">
-                    <li><a href="#"><i class='bx bx-table'> ภาระการสอน</i></a></li>
-                    <li><a href="#"><i class='bx bx-book-content'> ภาระอาจารย์ที่ปรึกษา</i></a></li>
-                    <li><a href="#"><i class='bx bxs-user-account'> ข้อมูลนักศึกษา</i></a></li>
-                    <li><a href="#"><i class='bx bx-archive-in'> ทำบันทึกถึงผู้เรียน</i></a></li>
-                    <li><a href="#"><i class='bx bx-message-rounded-dots'> เสนอความคิดเห็น</i></a></li>
-                    <li><a href="#"><i class='bx bx-objects-vertical-bottom'> สถิตินักศึกษา</i></a></li>
-                    <li><a href="#"><i class='bx bx-user'> ผู้ใช้งานระบบ</i></a></li>
+                    <li><a href="#"><i class='bx bx-undo'><box-icon name='undo'>ถอยกลับ</box-icon></i></a></li>
+                    <li><a href="#"><i class='bx bxs-printer' ><box-icon name='printer' type='solid' >พิมพ์ใบแจ้งเกรด</box-icon></i></i></a></li>
+                    
                 </ul>
             </div>
         </div>
 
         <!-- content right -->
         <div class="container-right-content">
-            <div class="slide slide-1">
-                <img src="https://erp.mju.ac.th/picture/information/5cb52b29bf0743969f6848c9b1544f8c.jpg"
-                    alt="" />
-            </div>
+            <div class="box_push"></div>
+           
+            <div class="box_a4">
+                <div class="head_table">
+                    <h3><b>บันทึกเกรด</b></h3>
+                    <h3>เชียงใหม่,ปริญญาตรี ปกติ</h3>
+                    <h3>ปีการศึกษา 2568 ภาคเรียนที่1</h3>
+                    
+                    <form>
+                        <label>รายวิชา:</label>
+                            <select>
+                                <option>10301342-การประมวลผลแบบกลุ่มเมฆ</option>
+                                <option>การเข้ารหัสและความปลอดภัยในเครือข่าย<option>
+                                <option>30118712-เทคโนโลยีดิจิทัลสำหรับนักบริหารทรัพยากร</option>
+                                <option>20118512-เทคโนโลยีดิจิทัลสำหรับนักจัดการและพัฒนาทรัพยากร</option>
+                                <option>คพ320-ระบบปฏิบัติการ</option>
+                            </select>
+                        <label>กลุ่ม</label>
+                        <select><option>1</option><option>2</select>
+                    </form>
+                   
+                    <h3>หน้าที่ 1/3 จำนวนนักศึกษาทั้งหมด 112 คน</h3> 
+                </div>
 
-            <div class="slide slide-2">
-                <img src="https://erp.mju.ac.th/picture/information/d94e64bb589b46acaa0edf633347f70a.png"
-                    alt="" />
-            </div>
-            <div class="slide slide-3">
-                <img src="https://erp.mju.ac.th/picture/information/780461cd50504908ab16475c195bff27.png"
-                    alt="" />
-            </div>
-            <div class="slide slide-4">
-                <img src="https://erp.mju.ac.th/picture/information/c0df758ca6534456928aea9ee027bbe1.png"
-                    alt="" />
-            </div>
-        </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ลำดับ</th>
+                            <th>รหัสนักศึกษา</th>
+                            <th>ชื่อ-นามสกุล</th>
+                            <th>เกรด</th>
+                            <th>ระบบเกรด</th>
+                            <th>สถานภาพ</th>   
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>2</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>3</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>4</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>1</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>5</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>6</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>7</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>8</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>9</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>10</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>11</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>12</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>13</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>14</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>15</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>16</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>17</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>18</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>19</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>20</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>21</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>22</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>23</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>24</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>21</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>25</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>26</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>27</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>28</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>29</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>30</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>31</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>32</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>33</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>34</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>35</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>36</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>37</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>38</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>39</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                        <tr><td>40</td> <td>6704101XXX</td> <td>               </td> <td><form><select><option selected="">  </option><option>A</option> <option>B</option> <option>C</option> <option>D</option> <option>F</option></select></form></td> <td>GD</td> <td>ปกติ</td></tr>
+                    </tbody>
+                </table>
+                <div class="toolbar">
+                    <button class="save-button">บันทึก</button>
 
+                    <div class="page-info">หน้าที่ 1/3</div>
 
-
-
-        <!-- icon ขวาล่าง -->
-        <div class="facebook-icon">
-            <a href="https://www.facebook.com/MJUChiangmai/ " target="_blank"><i class='bx bxl-facebook-square'></i></a>
-        </div>
-        <div class="ig-icon">
-            <a href="https://www.instagram.com/maejouniversity/"><i class='bx bxl-instagram-alt'></i></a>
-        </div>
+                    <div class="pagination">
+                        <button>ก่อนหน้า</button>
+                        <button>ถัดไป</button>   
+                    </div>
+                </div>  
+                <div class="text_footer">
+                    <p>*หมายเหตุ:หากทำการส่งเกรดแล้วแล้วจะไม่สามารถกรอกเกรดผ่านเว็บทะเบียนได้ ต้องทำเอกสารขอปรับเกรดมายังทะเบียนเท่านั้น</p>  
+                </div>
+            </div> 
+        </div> 
     </div>
-
-
 </body>
-
-
-<html>
+</html>
