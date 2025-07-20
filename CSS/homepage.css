@@ -26,16 +26,14 @@
   }
 
 .logo{
-    position: relative;
     display: flex;
     align-items: center;
-    max-width: 450px;
-    height: 100px;
+    width: 400px;
 }
 .logo img {
     display: block;
     width: 400px;
-  }
+}
 .text-section {
     text-align:start;
     margin: 0 10px;
@@ -80,7 +78,6 @@
     margin: 0 80px;
     text-decoration: none;
     font-weight: 700;
-
 }
 
 .menu-items li a {
@@ -360,6 +357,9 @@ body{
   align-items: center;
   padding: 40px;
   gap: 40px;
+  top:50px;
+  margin: 40px 0px;
+  position: relative;
   flex-wrap: wrap; /* ทำให้ responsive */
 }
 
@@ -412,3 +412,25 @@ body{
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
+
+@media (max-width: 450px) {
+  .login-mb{
+    position: relative;
+    top:110px;
+    width: 100px;
+    height: 40px;
+    left: 310px;
+    background-color: #076607;
+    border-radius: 10px;
+  }
+} 
+
+@media (max-width: 450px) {
+  .login-mb a{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    left: 5px;
+  }
+} 

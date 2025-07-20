@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REG-mju</title>
+    <link rel="stylesheet" href="../CSS/homepage.css" />
+  </head>
 
+<<<<<<< HEAD:index.html
     <link rel="stylesheet" href="CSS/homepage.css" />
 </head>
 
@@ -19,15 +21,14 @@
 <<<<<<< HEAD
     <!-- Navbar Container -->
     <div id="navbar-container"></div>
-
-<<<<<<< HEAD
-    <!-- เส้นแบ่ง -->
-    <div class="line-img">
-        <p>|</p>
 =======
-  <!-- เส้นแบ่ง -->
-  <div class="line-img">
-    <p>|</p>
+  <body>
+  <!-- Navbar Container -->
+  <div id="navbar-container"></div>
+>>>>>>> 24925d9fbb39d2d5d18b32f301087504d44d3248:้html/index.html
+
+  <div class="login-mb">
+    <a href="login.html">เข้าสู่ระบบ</a>
   </div>
 
   <!-- ใช้ JavaScript โหลดไฟล์ navbar.html -->
@@ -48,7 +49,7 @@
 <div class="banner-slider-container">
   <!-- รูปภาพแบนเนอร์1 -->
   <div class="image-wrapper">
-    <img src="img/mju-slogan-one.png" alt="Description" />
+    <img src="../img/mju-slogan-one.png" alt="Description" />
   </div>
 
   <!-- ข่าวหนึ่ง -->
@@ -95,54 +96,15 @@
           Read More
         </button>
       </label>
->>>>>>> SUN
     </div>
 
-    <!-- ใช้ JavaScript โหลดไฟล์ navbar.html -->
-    <script>
-        // ฟังก์ชั่นโหลดไฟล์ navbar.html
-        fetch("navbar.html")
-            .then((response) => response.text())
-            .then((data) => {
-                // ใส่ข้อมูลที่โหลดมาจาก navbar.html ลงใน div#navbar-container
-                document.getElementById("navbar-container").innerHTML = data;
-            })
-            .catch((error) => {
-                console.error("เกิดข้อผิดพลาดในการโหลด navbar:", error);
-            });
-    </script>
-
-    <script src="JS/script.js"></script>
-
-    <!-- รูปภาพแบนเนอร์ -->
-    <div class="image-wrapper-one">
-        <img src="img/mju-slogan-one.png" alt="Description"/>
+    <div class="dots">
+      <label for="t-1"></label>
+      <label for="t-2"></label>
+      <label for="t-3"></label>
+      <label for="t-4"></label>
+      <label for="t-5"></label>
     </div>
-    <!-- ข่าวหนึ่ง -->
-    <div class="slider">
-        <input type="radio" name="testimonial" id="t-1" />
-        <input type="radio" name="testimonial" id="t-2" checked />
-        <input type="radio" name="testimonial" id="t-3" />
-        <input type="radio" name="testimonial" id="t-4" />
-        <input type="radio" name="testimonial" id="t-5" />
-
-        <div class="testimonials">
-            <label class="item" for="t-1">
-                <h1>1</h1>
-            </label>
-            <label class="item" for="t-2">
-                <h1>2</h1>
-            </label>
-            <label class="item" for="t-3">
-                <h1>3</h1>
-            </label>
-            <label class="item" for="t-4">
-                <h1>4</h1>
-            </label>
-            <label class="item" for="t-5">
-                <h1>5</h1>
-            </label>
-        </div>
   </div>
 </div>
   <!-- Slider2 + แบนเนอร์2 -->
@@ -205,10 +167,11 @@
   
     <!-- แบนเนอร์2 -->
     <div class="image-wrapper">
-      <img src="img/mju-slogan-two.png" alt="Slogan Two" />
+      <img src="../img/mju-slogan-two.png" alt="Slogan Two" />
     </div>
   </div>
 
+<<<<<<< HEAD:index.html
 
         <div class="dots">
             <label for="t-1"></label>
@@ -232,7 +195,11 @@
 
 
 >>>>>>> 68f11e1daafca83631f1de15dec8481578eb8bce
+=======
+  <!-- Footer -->
+  <footer >
+    © 2025 Maejo University. All rights reserved.
+  </footer>
+>>>>>>> 24925d9fbb39d2d5d18b32f301087504d44d3248:้html/index.html
 </body>
-
-
 </html>

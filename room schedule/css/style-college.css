@@ -1,3 +1,10 @@
+/* Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    font-family: 'Prompt',sans-serif;
+}
+
 /* box ดัน .sidebar และ table */
 .box{
     background-color: #ffffff;
@@ -15,20 +22,32 @@
             width: 20px;
         }
         & .sidebar{
-            
+            position: relative;
+            top: 50px;
             padding: 20px;
             width:290px;
-            background-color:#066837;
+            height: 350px;
+            background-color:#aabba8;
             white-space:nowrap;
             font-size: 18px;
+            border-radius: 10px;
 
 
             & .menu{
+                position: relative;
                 list-style: none;
                 justify-items: center;
+                top: -20px;
+                height: 300px;
 
-                & div{
-                    color: red;
+                & .back{
+                    position: relative;
+                    color: rgb(255, 255, 255);
+                    width: 80px;
+                    height: 30px;
+                    border-radius: 6px;
+                    text-align: center;
+                    background-color: rgb(5, 107, 27);
                 }
             }
             
@@ -116,5 +135,22 @@
             height:300px;
             }     
         }
+<<<<<<< HEAD
     }        
         
+=======
+    }
+
+    .menu li{
+        margin: 20px 0px;
+        border-radius: 10px;
+    }
+
+.name_table h1{
+    color: #447504;
+}
+
+.name_table h2{
+    color: #e6b206;
+}
+>>>>>>> 24925d9fbb39d2d5d18b32f301087504d44d3248
