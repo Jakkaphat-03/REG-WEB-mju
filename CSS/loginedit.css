@@ -11,6 +11,13 @@ body {
     font-family: Nunito, sans-serif;
 }
 
+.login-container .goback a {
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    position: absolute;
+    color: #056d1f;
+}
 
 
 .login-container {
@@ -21,13 +28,14 @@ body {
     width: 340px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 
 .login-container h1 {
     text-align: center;
     margin-bottom: 1.5rem;
     font-family: Nunito, sans-serif;
-    
+
 }
 
 .login-container h3 {
@@ -70,7 +78,7 @@ body {
     background: #ddbe0b;
 }
 
-.input-email, 
+.input-email,
 .input-password {
     position: relative;
     margin-bottom: 1.2rem;
@@ -111,7 +119,7 @@ body {
 }
 
 .mju-logo {
-    width:auto;
+    width: auto;
     height: 90px;
     display: block;
     margin: 0 auto 1rem;
