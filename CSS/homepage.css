@@ -26,16 +26,14 @@
   }
 
 .logo{
-    position: relative;
     display: flex;
     align-items: center;
-    max-width: 450px;
-    height: 100px;
+    width: 400px;
 }
 .logo img {
     display: block;
     width: 400px;
-  }
+}
 .text-section {
     text-align:start;
     margin: 0 10px;
@@ -80,7 +78,6 @@
     margin: 0 80px;
     text-decoration: none;
     font-weight: 700;
-
 }
 
 .menu-items li a {
@@ -167,6 +164,14 @@
 
 }
 
+/* .line-img p{
+    margin-top: 400px;
+    margin-left: 165px;
+    color: #837e7e;
+    font-family: 'Nunito', sans-serif;
+    font-size: 150px;
+    font-weight: 200;
+} */
 
 .slogan-img {
     display: flex;
@@ -360,6 +365,9 @@ body{
   align-items: center;
   padding: 40px;
   gap: 40px;
+  top:50px;
+  margin: 40px 0px;
+  position: relative;
   flex-wrap: wrap; /* ทำให้ responsive */
 }
 
