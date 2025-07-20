@@ -41,7 +41,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 420px;
+    width: 420px;
     height: 100px;
 }
 

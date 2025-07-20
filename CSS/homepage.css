@@ -26,12 +26,16 @@
   }
 
 .logo{
+    position: relative;
     display: flex;
     align-items: center;
+    max-width: 450px;
+    height: 100px;
 }
 .logo img {
     display: block;
-}
+    width: 400px;
+  }
 .text-section {
     text-align:start;
     margin: 0 10px;
