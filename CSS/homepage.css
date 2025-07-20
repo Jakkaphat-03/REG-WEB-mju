@@ -164,14 +164,6 @@
 
 }
 
-/* .line-img p{
-    margin-top: 400px;
-    margin-left: 165px;
-    color: #837e7e;
-    font-family: 'Nunito', sans-serif;
-    font-size: 150px;
-    font-weight: 200;
-} */
 
 .slogan-img {
     display: flex;
@@ -420,3 +412,25 @@ body{
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
+
+@media (max-width: 450px) {
+  .login-mb{
+    position: relative;
+    top:110px;
+    width: 100px;
+    height: 40px;
+    left: 310px;
+    background-color: #076607;
+    border-radius: 10px;
+  }
+} 
+
+@media (max-width: 450px) {
+  .login-mb a{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    left: 5px;
+  }
+} 

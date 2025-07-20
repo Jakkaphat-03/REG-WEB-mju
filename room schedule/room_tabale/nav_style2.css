@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 0 30px;
+    padding: 0 60px;
     position: relative;
     height:100px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -31,7 +31,6 @@
 }
 .logo img {
     display: block;
-    width: 400px;
 }
 .text-section {
     text-align:start;
