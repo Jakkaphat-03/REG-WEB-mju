@@ -41,7 +41,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 420px;
+    width: 420px;
     height: 100px;
 }
 
@@ -188,6 +188,7 @@ body {
 
 /* กำหนด font ระยะห่างความสูง font */
 .system-menu {
+    top: 70px;
     line-height: 80px;
     list-style: none;
     position: absolute;
@@ -302,3 +303,34 @@ body {
     }
 }
 
+@media screen and (max-width: 450px) {
+    .logo img{
+        position: relative;
+        left:-20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .box-menu {
+        width: 190px;
+        height: 1000px;
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .box-list {
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .system-menu i{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .container-right-content{
+        left: 220px;
+    }
+}
